@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GettersySetters</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	
+$(document).on("ready", function(){
+
+	//Este metodo sirve para OBTENER el id
+	var clase = $("#prueba").attr("id");
+	alert(clase);
+	//Este metodo ASIGNA un valor
+	$("#prueba").attr("class", "ejemplo");
+
+});
+
+</script>
+
+
+
+</head>
+<body>
+
+<p id="parrafo"><strong> Hola jquery </strong></p>
+<div id='prueba'></div>
+
+
+</body>
+</html>

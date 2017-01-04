@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crear, copiar y remover elementos</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		
+	$(document).on("ready", function(){
+
+	
+		$('button').on('click', function(){
+
+			//$('ol li:last').prependTo('ol:first');  //al principio de la lista
+			//$('ol li:first').appendTo('ol:first'); //al final de la lista
+			//$('ol li:first').insertAfter('#e1'); //Insertar despues de algo, en este caso el div e1
+
+			//var clon = $('ol li:first').clone() //Funcion para clonar algo
+			//$('#e1').before(clon);			//Funcion para clonar algo 
+			//$('ol li:first').insertBefore(clon);
+
+
+				$('ol li:last').remove(); //funcion para remover algo, en este caso es el last.
+		})
+});
+
+	</script>
+
+
+
+
+</head>
+<body>
+<header>
+	
+</header>
+
+<ol>
+	
+
+<li>Elemento 1</li>
+<li>Elemento 2</li>
+<li>Elemento 3</li>
+<li>Elemento 4</li>
+</ol>
+
+<button id="test">Ejecutar</button>
+
+<div id="e1">
+	
+<p>Div 1</p>
+
+</div>
+
+
+<div id="e2">
+	
+<p>Div 2</p>
+
+</div>
+
+</body>
+</html>

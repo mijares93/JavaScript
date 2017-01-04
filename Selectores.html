@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selectores JQuery</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready", function(){
+		
+
+		//	$('div.miDiv article p').text("Hola selectores avanzados");
+		$('#parrafoUno, #parrafoDos, span').text("Todos somos iguales");	
+
+		});
+
+
+	</script>
+</head>
+<body>
+
+	<div class="miDiv">
+		<article>
+			<p id='parrafoUno'>Hola JQuery</p>
+		</article>
+	</div>
+	<div>
+		<article class="miDiv">
+			<p id='parrafoDos'>Esta es una prueba</p>
+		</article>
+</div>
+
+<span></span>
+
+
+</body>
+</html>
