@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metodo Data</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).on('ready', function(){
+
+				$('ul li').each(function(index,elemento){
+
+
+				$.data(elemento, 'posicion', index);
+		});
+
+				$('ul li').each(function(index,elemento){
+						console.log($.data(elemento,'posicion'));
+					});
+				});
+
+	</script>
+</head>
+<body>
+<ul>
+	<li>Uno</li>
+	<li>Dos</li>
+	<li>Tres</li>
+</ul>
+
+</body>
+</html>

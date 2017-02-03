@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Metodos Utilitarios</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		
+	$(document).on('ready', function(){
+		$('button').on('click', function(){
+
+			var arreglo = ['HP', 'IBM', 'GTA', 'Crysis'];
+			
+			var s = '                            hola            mun                   do                ';
+			console.log(s);
+			console.log($.trim(s));
+
+			/*if($.inArray('HP', arreglo)!= -1)
+				console.log(arreglo[$.inArray('HP', arreglo)]);
+*/
+
+			//$.each(arreglo, function(index, val){
+			//	console.log('Elemento ' + index + 'vale ' + val);
+			//})
+		})
+	})
+
+
+	</script>
+</head>
+<body>
+<button id="test">Ejecutar</button>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recorrer Documento HTML</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).on("ready", function(){
+
+			//console.log($('#primero').next().text());
+			//console.log($('#test').parent().text());
+			//console.log($('#padre').children().attr('id'));
+			console.log($('#primero').siblings());
+
+		});
+	</script>
+</head>
+<body>
+<div>
+	<article id='padre'>
+		
+		Hey!! :D
+
+		<div id='test'>Soy el hijo</div>
+	</article>
+		</div>
+<ul>
+	<li id='primero'>Soy el primero</li>
+	<li>Soy el que sigue</li>
+</ul>
+
+
+</body>
+</html>
